@@ -1,6 +1,6 @@
 FROM centos/systemd:latest
+USER root
 
 RUN yum -y install samba; systemctl enable smb; yum clean all;
 
-CMD ["/usr/sbin/init"]
 ENTRYPOINT ["/usr/sbin/init"]
