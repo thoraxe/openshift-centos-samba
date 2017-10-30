@@ -1,0 +1,9 @@
+[Unit]
+Description=Create users on start of system
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/createusers.sh
+
+[Install]
+WantedBy=smb.service
