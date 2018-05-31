@@ -2,7 +2,7 @@
 Description=Create users on start of system
 
 [Service]
-EnvironmentFile=/etc/sysconfig/createusers
+EnvironmentFile=/etc/sysconfig/smb/createusers
 Type=oneshot
 ExecStart=/usr/local/sbin/createusers.sh
 

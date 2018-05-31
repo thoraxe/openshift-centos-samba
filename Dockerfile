@@ -9,9 +9,9 @@ RUN yum -y install epel-release && \
 
 ADD createusers.sh /usr/local/sbin/
 ADD createusers.service /etc/systemd/system/
-ADD createusers /etc/sysconfig/
 
 RUN systemctl enable smb && \
     systemctl enable createusers && \
     mkdir /var/samba/ && \
+    mkdir /etc/sysconfig/smb && \
     chmod ug+rwx /usr/local/sbin/createusers.sh

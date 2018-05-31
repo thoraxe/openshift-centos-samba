@@ -1,3 +1,0 @@
-GROUPNAME='smbusers'
-GROUPID='501'
-USERJSON='[{"user":"erik","password":"friendly","id":"10001"},{"user":"susan","password":"friendly","id":"10002"}]'
